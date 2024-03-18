@@ -1,7 +1,10 @@
 <script setup>
-const { data, error, pending, refresh } = await useAsyncGql({
-  operation: "Songs",
-});
+// const { data, error, pending, refresh } = await useAsyncGql({
+//   operation: "Songs",
+// });
+
+const { data } = await useGraphqlQuery("films");
+console.log(data.allFilms.films);
 </script>
 
 <template>
