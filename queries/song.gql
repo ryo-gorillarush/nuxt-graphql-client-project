@@ -1,0 +1,11 @@
+query Songs {
+  songs {
+    createdAt
+    id
+    length
+    mp3
+    publishedAt
+    title
+    updatedAt
+  }
+}
